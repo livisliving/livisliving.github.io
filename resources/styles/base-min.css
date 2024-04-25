@@ -38,15 +38,12 @@ Copyright (c) Nicolas Gallagher and Jonathan Neal
     font-style: normal;
 }
 
-
-* {
+html {
+    line-height: 1.25;
+    -webkit-text-size-adjust: 100%;
     font-family: "Diatype Mono", sans-serif;
     letter-spacing: 0;
-}
-
-html {
-    line-height: 1.15;
-    -webkit-text-size-adjust: 100%
+    color: rgba(0, 0, 0, 0.85);
 }
 
 body {
@@ -218,10 +215,6 @@ template {
 
 [hidden] {
     display: none
-}
-
-html {
-    font-family: sans-serif
 }
 
 .hidden,[hidden] {

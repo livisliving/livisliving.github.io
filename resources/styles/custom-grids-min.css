@@ -1,8 +1,6 @@
 
 .wide, .slim {
     display: inline-block;
-    letter-spacing: normal;
-    word-spacing: normal;
     vertical-align: h1;
     text-rendering: auto;
 }
