@@ -9,16 +9,38 @@ normalize.css v | MIT License | https://necolas.github.io/normalize.css/
 Copyright (c) Nicolas Gallagher and Jonathan Neal
 */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-@font-face { font-family: Diatype Mono;
-    src:
-            url('../fonts/ABCDiatypeMono-Medium.otf') format("opentype"),
-            url('../fonts/ABCDiatypeMono-Black.otf') format("opentype"),
-            url('../fonts/ABCDiatypeMono-Light.otf') format("opentype");
+
+@font-face {
+    font-family: Diatype Mono;
+    src: url('../fonts/ABCDiatypeMono-Light.otf') format("opentype");
+    font-weight: 300;
+    font-style: normal;
 }
+
+@font-face {
+    font-family: Diatype Mono;
+    src: url('../fonts/ABCDiatypeMono-Regular.otf') format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Diatype Mono;
+    src: url('../fonts/ABCDiatypeMono-Medium.otf') format("opentype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Diatype Mono;
+    src: url('../fonts/ABCDiatypeMono-Black.otf') format("opentype");
+    font-weight: 900;
+    font-style: normal;
+}
+
 
 * {
     font-family: "Diatype Mono", sans-serif;
-    font-weight: 500;
     letter-spacing: 0;
 }
 
@@ -28,7 +50,7 @@ html {
 }
 
 body {
-    margin: 0
+    margin: 1.25rem;
 }
 
 main {
@@ -37,10 +59,11 @@ main {
 
 h1 {
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1.2rem;
     line-height: 1.15;
     letter-spacing: 0em;
+    margin: 0;
 }
 
 h1:hover {
@@ -49,6 +72,10 @@ h1:hover {
 
 h1.olivia {
     color: rgb(255, 59, 228);
+}
+
+p {
+    padding-right: 1rem;
 }
 
 hr {

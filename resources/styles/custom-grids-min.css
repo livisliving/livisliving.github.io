@@ -1,0 +1,16 @@
+
+.wide, .slim {
+    display: inline-block;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: h1;
+    text-rendering: auto;
+}
+
+.wide {
+    width: 27%;
+}
+
+.slim {
+    width: 19%;
+}
