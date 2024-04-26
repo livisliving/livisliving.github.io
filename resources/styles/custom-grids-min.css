@@ -1,14 +1,17 @@
-
-.wide, .slim {
+.wide-4, .slim-4 {
     display: inline-block;
     vertical-align: h1;
     text-rendering: auto;
 }
 
-.wide {
+.wide-4 {
     width: 27%;
 }
 
-.slim {
+.slim-4 {
     width: 19%;
+}
+
+.normal-1-6 {
+    width: 16.66%;
 }
