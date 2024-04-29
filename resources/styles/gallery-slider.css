@@ -1,0 +1,32 @@
+.slider {
+    position: relative;
+}
+.slider ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0 0 20px 0;
+    margin: 0 auto;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 50%;
+    scrollbar-width: none;
+    scroll-padding-left: 0px;
+    scroll-padding-inline-start: 0px;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+}
+.slider ul::-webkit-scrollbar {
+    display: none;
+}
+
+.slider ul li {
+    scroll-snap-align: center;
+    padding: 0 20px 0 0;
+    scroll-snap-stop: always;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    justify-content: flex-end;
+}

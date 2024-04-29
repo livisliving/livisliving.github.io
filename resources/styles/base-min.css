@@ -61,15 +61,16 @@ h1:hover {
     text-decoration: underline;
 }
 
-h1.olivia {
-    color: rgb(255, 59, 228);
-
-}
-
 p {
     font-size: calc(var(--font-scale) * var(--font-size));
     padding-right: 1rem;
 }
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
 
 hr {
     box-sizing: content-box;
