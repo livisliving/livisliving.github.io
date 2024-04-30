@@ -45,7 +45,7 @@ svg {
 }
 
 .header {
-    padding: 1.25rem 1.25rem 0;
+    padding: 1.25rem 0 0;
 }
 
 .header a {
@@ -54,7 +54,7 @@ svg {
 }
 
 .screen {
-    padding: 0 1.25rem 1.25rem;
+    padding: 0 1.25rem 0;
     height: 100vh;
 }
 
