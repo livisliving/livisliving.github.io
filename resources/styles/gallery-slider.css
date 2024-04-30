@@ -30,3 +30,8 @@
     width: 300px;
     justify-content: flex-end;
 }
+
+.slider ul li::marker {
+    content: '✝ ';
+    font-size: 1.2rem;
+}
