@@ -39,14 +39,23 @@ svg {
     height: 1.25rem;
     fill: currentColor;
 }
+
+.title {
+    position: fixed;
+}
+
 .header {
     padding: 1.25rem 1.25rem 0;
+}
+
+.header a {
+    -webkit-text-stroke: 0.2rem #fff;
+    paint-order: stroke fill;
 }
 
 .screen {
     padding: 0 1.25rem 1.25rem;
     height: 100vh;
-
 }
 
 #gallery {
