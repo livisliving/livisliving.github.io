@@ -50,19 +50,12 @@ svg {
 
 .header a {
     -webkit-text-stroke: 0.2rem #fff;
-    paint-order: stroke fill;
+    paint-order: stroke fill markers;
 }
 
 .screen {
     padding: 0 1.25rem 1.25rem;
     height: 100vh;
-}
-
-#gallery {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
 }
 
 main {
@@ -85,6 +78,22 @@ a {
 
 a:hover {
     text-decoration: underline;
+    text-underline-offset: 20px;
+}
+
+.dropdown {
+}
+
+.dropdown-content {
+    display: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.highlight .dropdown-content {
+    display: block;
 }
 
 p {

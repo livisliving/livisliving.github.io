@@ -1,3 +1,7 @@
-.highlight {
+.highlight a {
     color: rgb(255, 59, 228);
+}
+
+.bottom {
+    bottom: 0;
 }
