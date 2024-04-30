@@ -39,10 +39,14 @@ svg {
     height: 1.25rem;
     fill: currentColor;
 }
+.header {
+    padding: 1.25rem 1.25rem 0;
+}
 
 .screen {
-    padding: 1.25rem;
+    padding: 0 1.25rem 1.25rem;
     height: 100vh;
+
 }
 
 #gallery {
