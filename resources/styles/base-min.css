@@ -65,7 +65,9 @@ a {
     line-height: 1.15;
     font-weight: 400;
     margin: 0;
-    background-color: transparent
+    background-color: transparent;
+    text-decoration: none;
+    color: inherit;
 }
 
 a:hover {
