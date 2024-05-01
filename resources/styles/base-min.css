@@ -45,7 +45,7 @@ svg {
 }
 
 .header {
-    padding: 1.25rem 0 0;
+    padding: 0;
 }
 
 .header a {
@@ -72,12 +72,17 @@ svg {
     height: 100vh;
 }
 
+.offscreen {
+    padding: 0 0 0;
+}
+
 main {
     display: block
 }
 
 body {
     margin: 0;
+    padding: 1.25rem 0 0;
     overflow: scroll;
 }
 
@@ -97,8 +102,7 @@ body {
 }
 
 p {
-    font-size: calc(var(--font-scale) * var(--font-size));
-    padding-right: 1rem;
+    margin: 0;
 }
 
 hr {
@@ -141,7 +145,12 @@ sup {
 }
 
 img {
-    border-style: none
+    border-style: none;
+    object-fit: contain;
+    overflow-clip-margin: border-box;
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 button,input,optgroup,select,textarea {
@@ -234,10 +243,4 @@ template {
 
 .hidden,[hidden] {
     display: none!important
-}
-
-.pure-img {
-    max-width: 100%;
-    height: auto;
-    display: block
 }
