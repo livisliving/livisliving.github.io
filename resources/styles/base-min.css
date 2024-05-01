@@ -51,6 +51,20 @@ svg {
 .header a {
     -webkit-text-stroke: 0.2rem #fff;
     paint-order: stroke fill markers;
+    font-size: calc(var(--font-scale) * var(--font-size));
+    line-height: 1.15;
+    font-weight: 400;
+    margin: 0;
+    background-color: transparent;
+    text-decoration-line: none;
+    text-decoration-color: black;
+    color: inherit;
+}
+
+.header a:hover {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-underline-offset: 0.1rem;
 }
 
 .screen {
@@ -64,21 +78,6 @@ main {
 
 body {
     margin: 0;
-}
-
-a {
-    font-size: calc(var(--font-scale) * var(--font-size));
-    line-height: 1.15;
-    font-weight: 400;
-    margin: 0;
-    background-color: transparent;
-    text-decoration: none;
-    color: inherit;
-}
-
-a:hover {
-    text-decoration: underline;
-    text-underline-offset: 20px;
 }
 
 .dropdown {
@@ -110,13 +109,6 @@ hr {
 pre {
     font-family: monospace,monospace;
     font-size: 1em
-}
-
-abbr[title] {
-    border-bottom: none;
-    text-decoration: underline;
-    -webkit-text-decoration: underline dotted;
-    text-decoration: underline dotted
 }
 
 b,strong {
