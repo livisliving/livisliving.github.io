@@ -78,6 +78,7 @@ main {
 
 body {
     margin: 0;
+    overflow: scroll;
 }
 
 .dropdown {
