@@ -48,7 +48,7 @@ svg {
     padding: 0;
 }
 
-.header a {
+a {
     -webkit-text-stroke: 0.2rem #fff;
     paint-order: stroke fill markers;
     font-size: calc(var(--font-scale) * var(--font-size));
@@ -61,7 +61,7 @@ svg {
     color: inherit;
 }
 
-.header a:hover {
+a:hover {
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-underline-offset: 0.1rem;
