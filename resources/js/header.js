@@ -1,5 +1,5 @@
 
-document.addEventListener('DOMContentLoaded', loadHeader("../../header.html"), false);
+document.addEventListener('DOMContentLoaded', loadHeader("header.html"), false);
 function loadHeader(href)
 {
     var xmlhttp = new XMLHttpRequest();
