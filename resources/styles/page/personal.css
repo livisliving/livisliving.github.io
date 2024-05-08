@@ -1,4 +1,8 @@
-.highlight a {
+#personal a {
     color: rgba(29, 200, 177, 0.85);
     text-decoration-color: rgba(29, 200, 177, 0.85);
+}
+
+#personal .dropdown-content {
+    display: block;
 }

@@ -1,8 +1,13 @@
+#index a {
+    color: rgb(255, 59, 228);
+    text-decoration-color: rgb(255, 59, 228);
+}
+
 .highlight a {
     color: rgb(255, 59, 228);
     text-decoration-color: rgb(255, 59, 228);
 }
 
-.bottom {
-    bottom: 0;
+#index .dropdown-content {
+    display: block;
 }

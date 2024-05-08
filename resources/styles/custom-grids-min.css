@@ -1,5 +1,6 @@
 .wide-4, .slim-4, .normal-1-6 {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     vertical-align: baseline;
     text-rendering: auto;
     box-sizing: border-box;
