@@ -4,5 +4,5 @@
 }
 
 #commercial .dropdown-content {
-    display: block;
+    visibility: visible;
 }
