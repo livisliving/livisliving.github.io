@@ -40,6 +40,20 @@ svg {
     fill: currentColor;
 }
 
+figure {
+    margin: 0;
+}
+
+figure .gallery img {
+    display: none;
+}
+
+figcaption {
+    font-size: 0.85rem;
+    margin-top: .75em;
+    color: rgba(0, 0, 0, 0.5)
+}
+
 .title {
     position: fixed;
 }
