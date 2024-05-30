@@ -9,8 +9,14 @@
     <link rel="stylesheet" href="./resources/styles/custom-grids-min.css">
     <link rel="stylesheet" href="./resources/styles/gallery-slider.css">
 
-    <script async src="./resources/js/header.js" type="text/javascript"></script>
 
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-4.0.0-beta.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#header-container').load("header.html");
+        });
+    </script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-MV5EDGJ2R9"></script>
     <script>
