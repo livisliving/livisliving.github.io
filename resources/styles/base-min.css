@@ -31,6 +31,12 @@ html {
     font-variation-settings: 'slnt' 0, 'MONO' 0.25;
 }
 
+body {
+    margin: 0;
+    overflow-y: scroll;
+    paint-order: stroke fill markers;
+}
+
 svg {
     align-content: normal;
     display: inline-block;
@@ -99,11 +105,6 @@ a:hover {
 
 main {
     display: block
-}
-
-body {
-    margin: 0;
-    overflow-y: scroll;
 }
 
 .dropdown {
