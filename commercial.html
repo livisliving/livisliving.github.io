@@ -8,13 +8,9 @@
     <link rel="stylesheet" href="./resources/styles/grids-min.css">
     <link rel="stylesheet" href="./resources/styles/custom-grids-min.css">
 
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-4.0.0-beta.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('#header-container').load("header.html");
-        });
-    </script>
+    <!-- HTMX -->
+    <script src="https://unpkg.com/htmx.org@2.0.0" integrity="sha384-wS5l5IKJBvK6sPTKa2WZ1js3d947pvWXbPJ1OmWfEuxLgeHcEbjUUA5i9V5ZkpCw" crossorigin="anonymous"></script>
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-MV5EDGJ2R9"></script>
     <script>
@@ -27,7 +23,7 @@
 </head>
 <body>
 <div class="screen">
-    <div id="header-container"><!-- script loads header in here --></div>
+    <div hx-trigger="load" hx-get="/header.html" hx-swap="outerHTML"></div>
 </div>
 <div id="offscreen">
     <div class="pure-g" id="gallery">
