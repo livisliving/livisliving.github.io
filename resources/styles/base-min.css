@@ -65,6 +65,7 @@ figcaption {
 }
 
 .header {
+    flex-grow: 1;
     padding: 0;
     height: 100%;
 }
@@ -93,10 +94,6 @@ a:hover {
     height: 96vh;
     display: flex;
     flex-direction: column;
-}
-
-#header-container {
-    flex-grow: 1;
 }
 
 #offscreen {
