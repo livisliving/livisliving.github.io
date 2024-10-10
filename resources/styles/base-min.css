@@ -57,7 +57,7 @@ figure .gallery img {
 
 figcaption {
     font-size: 0.85rem;
-    margin-top: .75em;
+    margin: .5rem 0 .5rem;
     color: rgba(0, 0, 0, 0.5)
 }
 
