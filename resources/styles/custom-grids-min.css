@@ -1,4 +1,4 @@
-.wide-4, .slim-4, .normal-1-6 {
+.wide-4, .slim-4, .normal-1-6, .normal-2-6 {
     display: flex;
     flex-direction: column;
     vertical-align: baseline;
@@ -16,5 +16,10 @@
 
 .normal-1-6 {
     width: 16.66%;
+    padding: 0 0.75rem 0;
+}
+
+.normal-2-6 {
+    width: 33.32%;
     padding: 0 0.75rem 0;
 }
