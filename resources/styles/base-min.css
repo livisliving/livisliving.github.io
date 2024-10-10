@@ -90,14 +90,16 @@ a:hover {
     text-underline-offset: 0.1rem;
 }
 
-.screen {
+#screen {
+    box-sizing: border-box;
     padding: 1.25rem;
-    height: 96vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
 #offscreen {
+    box-sizing: border-box;
     padding: 0 0 0;
 }
 
