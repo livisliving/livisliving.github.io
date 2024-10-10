@@ -103,6 +103,14 @@ a:hover {
     padding: 0 0 0;
 }
 
+#footer {
+    padding: 1.25rem 0 1.25rem;
+}
+
+#footer #trademark {
+    color: rgba(0, 0, 0, 0.5)
+}
+
 main {
     display: block
 }
