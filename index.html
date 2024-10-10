@@ -38,7 +38,7 @@
         initSlides('the-visitor', 700);
         initSlides('utopia', 700);
 ">
-<div class="screen">
+<div id="screen">
     <div hx-trigger="load" hx-get="/header.html" hx-swap="outerHTML"></div>
     <div class="highlight" style="align-self: flex-end; position: relative; bottom:0;">
         <a href="#offscreen">ARCHIVE ↓</a>
@@ -48,7 +48,7 @@
     <div class="pure-g">
         <!-- Column 1/6 -->
         <div class="normal-1-6">
-            <!-- Spectral Archive -->
+            <!-- Personal: Spectral Archive -->
             <figure>
                 <div class="gallery" id="spectral-archive">
                     <img loading="lazy" style="display: block;"
@@ -61,6 +61,13 @@
                 </div>
                 <img loading="lazy" src="./resources/personal/2023/spectral%20archive/pic.jpg">
                 <figcaption>Spectral Archive</figcaption>
+            </figure>
+            <!-- Commercial: Nike Big Bang Network -->
+            <figure>
+                <img loading="lazy" src="https://storage.googleapis.com/oliviazuo-portfolio/commercial/nike/background-1.jpg">
+                <img loading="lazy" src="https://storage.googleapis.com/oliviazuo-portfolio/commercial/nike/background-2.jpg">
+                <img loading="lazy" src="https://storage.googleapis.com/oliviazuo-portfolio/commercial/nike/background-3.jpg">
+                <figcaption>Nike Big Bang Network</figcaption>
             </figure>
         </div>
         <!-- Column 2/6 -->
@@ -124,5 +131,6 @@
         </div>
     </div>
 </div>
+<div hx-trigger="load" hx-get="/footer.html" hx-swap="outerHTML"></div>
 </body>
 </html>
