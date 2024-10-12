@@ -51,6 +51,10 @@ figure {
     margin: 0;
 }
 
+.gallery {
+    width: 100%;
+}
+
 figure .gallery img {
     display: none;
 }
