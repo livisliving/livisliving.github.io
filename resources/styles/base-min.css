@@ -100,7 +100,7 @@ a:hover {
 
 #screen {
     box-sizing: border-box;
-    padding: 1.25rem;
+    padding: 1.5rem;
     height: 100vh;
     display: flex;
     flex-direction: column;
