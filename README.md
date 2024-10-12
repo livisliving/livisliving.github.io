@@ -1,3 +1,3 @@
 # Liv portfolio
 
-copy http://oliviazuo.co.uk or http://oliviazuo.com
+copy https://oliviazuo.co.uk or https://oliviazuo.com
