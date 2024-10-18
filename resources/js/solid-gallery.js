@@ -46,7 +46,7 @@ function initSlides(id, transitionDelay, widthFix = true) {
         if (index >= slides.length) { index = 0; }
     }
 
-    onresize = (event) => {
+    window.onresize = (event) => {
         widthFix ? sizeFrameWidth() : sizeFrameHeight();
     };
 

@@ -27,7 +27,6 @@ function updateImageSrc(image) {
 }
 
 function initAllImageSrc() {
-    console.info("updating all image sources");
     for (let i = 0; i < collection.length; i++) {
         updateImageSrc(collection[i]);
     }
@@ -39,18 +38,18 @@ function updateAllImageSrc() {
         let ratioHeight = collection[i].naturalHeight / parseInt(window.getComputedStyle(collection[i]).height)
         if ((ratioWidth < 1.5 && ratioHeight !== 0 && !isNaN(ratioHeight))
             || (ratioWidth < 1.5 && ratioWidth !== 0 && !isNaN(ratioWidth))) {
-            console.info("upscaled an image!");
+            console.info("requesting a higher resolution image");
             updateImageSrc(collection[i]);
         }
     }
 }
 
-window.onload = () => {
-    console.log("onload updating image source");
+window.onload = (event) => {
+    console.info("onload updating image source");
     initAllImageSrc()
-}
+};
 
-window.onresize = () => {
-    console.log("onresize updating image source");
+window.onresize = (event) => {
+    console.info("onresize updating image source");
     updateAllImageSrc()
-}
+};
