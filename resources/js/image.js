@@ -50,5 +50,9 @@ window.onload = (event) => {
     window.onresize = (event) => {
         updateAllImageSrc()
     };
+
+    window.ondeviceorientation = () => {
+        updateAllImageSrc()
+    }
 };
 
