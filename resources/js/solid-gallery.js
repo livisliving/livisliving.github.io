@@ -50,6 +50,10 @@ function initSlides(id, transitionDelay, widthFix = true) {
         widthFix ? sizeFrameWidth() : sizeFrameHeight();
     };
 
+    window.ondeviceorientation = (event) => {
+        widthFix ? sizeFrameWidth() : sizeFrameHeight();
+    };
+
     setInterval (() => showSlide(index), transitionDelay);
 }
 
