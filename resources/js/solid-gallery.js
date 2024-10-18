@@ -4,7 +4,7 @@ function initSlides(id, transitionDelay, widthFix = true) {
     console.log("init: " + id)
 
     let gallery = document.getElementById(id);
-    let slides  = gallery.getElementsByTagName("img")
+    let slides  = gallery.getElementsByTagName("img");
 
     function sizeFrameWidth() {
         let maxHeight = 0;
