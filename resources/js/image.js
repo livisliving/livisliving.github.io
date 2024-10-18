@@ -45,11 +45,10 @@ function updateAllImageSrc() {
 }
 
 window.onload = (event) => {
-    console.info("onload updating image source");
     initAllImageSrc()
+
+    window.onresize = (event) => {
+        updateAllImageSrc()
+    };
 };
 
-window.onresize = (event) => {
-    console.info("onresize updating image source");
-    updateAllImageSrc()
-};
