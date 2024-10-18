@@ -35,7 +35,7 @@
     </script>
 
 </head>
-<body>
+<body onresize="updateAllImageSrc();">
 <div id="screen">
     <div hx-trigger="load" hx-get="/header.html" hx-swap="outerHTML"></div>
     <div class="highlight" style="align-self: flex-end; position: relative; bottom:0;">

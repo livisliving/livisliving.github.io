@@ -2,23 +2,7 @@ let collection = document.getElementsByTagName("img");
 
 const SOURCE = "https://image-resizer.simonpforster.com/oliviazuo-portfolio"
 
-function updateAllImageSrc() {
-    console.info("updating all image sources");
-    for (let i = 0; i < collection.length; i++) {
-        updateImageSrc(collection[i]);
-    }
-}
-
-function updateAllImageSrcInit() {
-    console.info("updating all image sources");
-    for (let i = 0; i < collection.length; i++) {
-        updateImageSrcInit(collection[i]);
-    }
-}
-
-
 function updateImageSrc(image) {
-
     let fix = image.getAttribute("fix");
     let path = image.getAttribute("path");
 
@@ -42,30 +26,31 @@ function updateImageSrc(image) {
     }
 }
 
-function updateImageSrcInit(image) {
-
-    let path = image.getAttribute("path");
-
-    if (path != null) {
-        image.setAttribute("loading", "lazy")
-        image.src = SOURCE + path + "?width=20";
+function initAllImageSrc() {
+    console.info("updating all image sources");
+    for (let i = 0; i < collection.length; i++) {
+        updateImageSrc(collection[i]);
     }
 }
 
-// window.onloadstart = () => {
-//     console.log("onloadstart updating image source");
-//     updateAllImageSrc()
-// }
+function updateAllImageSrc() {
+    for (let i = 0; i < collection.length; i++) {
+        let ratioWidth = collection[i].naturalWidth / parseInt(window.getComputedStyle(collection[i]).width)
+        let ratioHeight = collection[i].naturalHeight / parseInt(window.getComputedStyle(collection[i]).height)
+        if ((ratioWidth < 1.5 && ratioHeight !== 0 && !isNaN(ratioHeight))
+            || (ratioWidth < 1.5 && ratioWidth !== 0 && !isNaN(ratioWidth))) {
+            console.info("upscaled an image!");
+            updateImageSrc(collection[i]);
+        }
+    }
+}
 
 window.onload = () => {
     console.log("onload updating image source");
-    updateAllImageSrc()
+    initAllImageSrc()
 }
 
-// window.onresize = () => {
-//     console.log("onresize updating image source");
-//     updateAllImageSrc()
-// }
-
-// console.log("init updating image source");
-// updateAllImageSrcInit()
+window.onresize = () => {
+    console.log("onresize updating image source");
+    updateAllImageSrc()
+}
