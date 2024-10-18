@@ -1,10 +1,14 @@
 function initSlides(id, transitionDelay, widthFix = true) {
-    let index = 0;
 
     console.log("init: " + id)
-
     let gallery = document.getElementById(id);
-    let slides  = gallery.getElementsByTagName("img");
+    let slides= gallery.getElementsByTagName("img");
+
+    slides[0].style.display = "block";
+    for (let i = 1; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
 
     function sizeFrameWidth() {
         let maxHeight = 0;
@@ -26,6 +30,7 @@ function initSlides(id, transitionDelay, widthFix = true) {
         gallery.style.height = minHeight + "px";
     }
 
+    let index = 0;
 
     // show a specific slide
     function showSlide(slideNumber) {
@@ -38,9 +43,7 @@ function initSlides(id, transitionDelay, widthFix = true) {
         // next index
         index++;
         // go back to 0 if at the end of slides
-        if (index >= slides.length) { index = 0; } else {
-            slides[index].loading = "eager";
-        }
+        if (index >= slides.length) { index = 0; }
     }
 
     onresize = (event) => {
@@ -50,3 +53,17 @@ function initSlides(id, transitionDelay, widthFix = true) {
     setInterval (() => showSlide(index), transitionDelay);
 }
 
+let galleries= document.getElementsByClassName("gallery");
+
+for (let i = 0; i < galleries.length; i++) {
+    let fix = galleries[i].getAttribute("fix");
+    if (fix != null) {
+        if (fix === "height") {
+            initSlides(galleries[i].id, 700, false);
+        } else {
+            initSlides(galleries[i].id, 700);
+        }
+    } else {
+        initSlides(galleries[i].id, 700);
+    }
+}
