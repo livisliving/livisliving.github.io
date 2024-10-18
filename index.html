@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./resources/styles/grids-min.css">
     <link rel="stylesheet" href="./resources/styles/custom-grids-min.css">
 
-    <script src="./resources/js/images.js" type="text/javascript" async></script>
+    <script src="./resources/js/image.js" type="text/javascript" async></script>
     <script src="./resources/js/solid-gallery.js" type="text/javascript" async></script>
 
     <!-- HTMX -->
@@ -35,15 +35,7 @@
     </script>
 
 </head>
-<body onload="
-    initSlides('spectral-archive', 700);
-    initSlides('the-visitor', 700);
-    initSlides('utopia', 700);
-    initSlides('new-balance', 700, false);
-    initSlides('dialogue', 700);
-    initSlides('obloom', 700);
-    initSlides('bacac', 700);
-">
+<body>
 <div id="screen">
     <div hx-trigger="load" hx-get="/header.html" hx-swap="outerHTML"></div>
     <div class="highlight" style="align-self: flex-end; position: relative; bottom:0;">
@@ -191,7 +183,7 @@
                 </figure>
                 <!-- Commercial: New Balance SCF -->
                 <figure>
-                    <div class="gallery" id="new-balance">
+                    <div class="gallery" id="new-balance" fix="height">
                         <img src="./resources/black_hearts.svg" style="display: block;"
                              path="/commercial/new-balance/picture-shoe.jpg"
                              fix="width">
