@@ -2,7 +2,7 @@ let collection = document.getElementsByTagName("img");
 
 const SOURCE = "https://image-resizer.simonpforster.com/oliviazuo-portfolio"
 
-function updateImageSrc(image) {
+function updateImageSrc(image, blur = false) {
     let fix = image.getAttribute("fix");
     let path = image.getAttribute("path");
 
@@ -11,11 +11,11 @@ function updateImageSrc(image) {
         if (fix != null) {
             switch (fix.toLowerCase()) {
                 case 'width':
-                    let width = parseInt(window.getComputedStyle(image.parentElement).width) * 2;
+                    let width = blur ? 4 : parseInt(window.getComputedStyle(image.parentElement).width) * 2;
                     url += "?width=" + width;
                     break;
                 case 'height':
-                    let height = parseInt(window.getComputedStyle(image.parentElement).height) * 2;
+                    let height = blur ? 4 : parseInt(window.getComputedStyle(image.parentElement).height) * 2;
                     url += "?height=" + height;
                     break;
                 default:
@@ -24,38 +24,27 @@ function updateImageSrc(image) {
         }
         image.src = url;
 
-        image.addEventListener("load", () => {
-            image.setAttribute("loaded", "true");
-        }, {once: true})
+        if (blur) {
+            image.addEventListener("load", () => {
+                image.setAttribute("loaded", "blur");
+                if (checkAllBlurred()) {
+                    let captions = document.getElementsByTagName("figcaption")
+                    for (let i = 0; i < captions.length; i++) {
+                        captions[i].style.display = "block";
+                    }
+                    allImages(updateImageSrc)
+                }
+            }, {once: true})
+        } else {
+            image.addEventListener("load", () => {
+                image.setAttribute("loaded", "true");
+            }, {once: true})
+        }
     }
 }
 
-function initImageBlur(image) {
-    let fix = image.getAttribute("fix");
-    let path = image.getAttribute("path");
-
-    if (path != null) {
-        let url = SOURCE + path;
-        if (fix != null) {
-            switch (fix.toLowerCase()) {
-                case 'width':
-                    url += "?width=" + 20;
-                    break;
-                case 'height':
-                    url += "?height=" + 20;
-                    break;
-                default:
-                    break;
-            }
-        } else {
-            url += "?width=" + 20;
-        }
-        image.src = url;
-        image.addEventListener("load", () => {
-            image.setAttribute("loaded", "blur");
-            checkAllBlurred() ? allImages(updateImageSrc) : null;
-        }, {once: true})
-    }
+function updateImageSrcBlur(image) {
+    updateImageSrc(image, true)
 }
 
 function checkForUpdateImageSrc(image) {
@@ -76,16 +65,23 @@ function allImages(thing) {
 
 function checkAllBlurred() {
     let blurred = true;
-    allImages( function(image) {
+    allImages(function (image) {
         image.getAttribute("loaded") !== "blur" ? blurred = false : null;
     })
     return blurred;
 }
 
+export {
+    updateImageSrc,
+    checkForUpdateImageSrc
+}
+
 // Do all init stuff
 document.readyState === "loading"
-    ? document.addEventListener("DOMContentLoaded",  allImages(initImageBlur))
-    : allImages(initImageBlur)
+    ? document.addEventListener("DOMContentLoaded", function () {
+        allImages(updateImageSrcBlur)
+    })
+    : allImages(updateImageSrcBlur)
 
 window.onload = (event) => {
 
