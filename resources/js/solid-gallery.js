@@ -1,4 +1,4 @@
-
+import {checkForUpdateImageSrc} from "./image.js";
 
 function initSlides(id, transitionDelay, widthFix = true) {
 
@@ -47,6 +47,9 @@ function initSlides(id, transitionDelay, widthFix = true) {
                 || slides[0].getAttribute("loaded") === "true"
         }
         if (check) {
+            if (slides[index].getAttribute("loaded") === "true") {
+                checkForUpdateImageSrc(slides[index]) // todo, check against current block image in gallery
+            }
             for (let i = 0; i < slides.length; i++) {
                 slides[i].style.display = i === slideNumber ? "block" : "none";
             }
