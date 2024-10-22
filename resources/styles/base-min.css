@@ -70,16 +70,6 @@ figcaption {
     display: none;
 }
 
-.title {
-    position: fixed;
-}
-
-.header {
-    flex-grow: 1;
-    padding: 0;
-    height: 100%;
-}
-
 a {
     -webkit-text-stroke: 0.2rem #fff;
     paint-order: stroke fill markers;
@@ -128,23 +118,8 @@ main {
     display: block
 }
 
-.dropdown {
-}
-
 .fill {
     height: 100%;
-}
-
-.dropdown-content {
-    visibility: hidden;
-}
-
-.dropdown:hover .dropdown-content {
-    visibility: visible;
-}
-
-.highlight .dropdown-content {
-    display: block;
 }
 
 p {
@@ -293,4 +268,33 @@ template {
 
 .hidden,[hidden] {
     display: none!important
+}
+
+.highlight .dropdown-content {
+    display: block;
+}
+
+.title {
+    position: fixed;
+}
+
+.header {
+    flex-grow: 1;
+    padding: 0;
+    height: 100%;
+}
+
+@media screen and (min-width: 700px) {
+
+    .dropdown-content {
+        visibility: hidden;
+    }
+
+    .dropdown:hover .dropdown-content {
+        visibility: visible;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
 }

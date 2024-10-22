@@ -11,3 +11,22 @@
 #index .dropdown-content {
     visibility: visible;
 }
+
+
+@media screen and (max-width: 700px) {
+    .header .dropdown #index {
+        height: 70%;
+    }
+
+    .header .dropdown:not(#index) {
+        height: 10%;
+    }
+
+    .dropdown-content {
+        display: none;
+    }
+
+    #index .dropdown-content {
+        display: block;
+    }
+}
