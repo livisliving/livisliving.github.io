@@ -3,6 +3,11 @@
     text-decoration-color: rgb(0, 0, 255);
 }
 
+.highlight a {
+    color: rgb(0, 0, 255);
+    text-decoration-color: rgb(0, 0, 255);
+}
+
 #commercial .dropdown-content {
     visibility: visible;
 }
