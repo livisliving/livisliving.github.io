@@ -1,5 +1,10 @@
 import {checkForUpdateImageSrc} from "./image.js";
 
+function isLoaded(image) {
+    let loadedAttribute = image.getAttribute("loaded");
+    return (loadedAttribute === "blur" || loadedAttribute === "true");
+}
+
 function initSlides(id, transitionDelay, widthFix = true) {
 
     console.log("init: " + id)
@@ -40,11 +45,9 @@ function initSlides(id, transitionDelay, widthFix = true) {
         let check = false;
         if (index < slides.length - 1) {
             slides[index + 1].loading = "eager";
-            check = slides[index + 1].getAttribute("loaded") === "blur"
-                || slides[index + 1].getAttribute("loaded") === "true"
+            check = isLoaded(slides[index + 1]);
         } else {
-            check = slides[0].getAttribute("loaded") === "blur"
-                || slides[0].getAttribute("loaded") === "true"
+            check = isLoaded(slides[0]);
         }
         if (check) {
             if (slides[index].getAttribute("loaded") === "true") {

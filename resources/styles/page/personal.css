@@ -6,3 +6,21 @@
 #personal .dropdown-content {
     visibility: visible;
 }
+
+@media screen and (max-width: 700px) {
+    .header .dropdown #personal {
+        height: 70%;
+    }
+
+    .header .dropdown:not(#personal) {
+        height: 10%;
+    }
+
+    .dropdown-content {
+        display: none;
+    }
+
+    #personal .dropdown-content {
+        display: block;
+    }
+}
