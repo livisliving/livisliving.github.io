@@ -16,11 +16,6 @@
     <script src="./resources/js/image.js" type="module"></script>
     <script src="./resources/js/solid-gallery.js" type="module"></script>
 
-    <!-- HTMX -->
-    <script src="https://unpkg.com/htmx.org@2.0.0"
-            integrity="sha384-wS5l5IKJBvK6sPTKa2WZ1js3d947pvWXbPJ1OmWfEuxLgeHcEbjUUA5i9V5ZkpCw"
-            crossorigin="anonymous"></script>
-
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-MV5EDGJ2R9"></script>
     <script>
@@ -38,7 +33,100 @@
 </head>
 <body>
 <div id="screen">
-    <div hx-trigger="load" hx-get="/header.html" hx-swap="outerHTML"></div>
+    <div class="pure-g header">
+        <div class="wide-4 dropdown fill" id="index">
+            <a class="title" href="./">OLIVIA ZUO</a>
+            <br>
+            <div class="dropdown-content">
+                <p>
+                    Graphic Designer, Researcher<br>
+                    Based in London
+                </p>
+                <p>
+                    BA Advertising, BNU<br>
+                    MA Graphic Media Design, UAL
+                </p>
+                <p>
+                    My current research focus lies in media memory and the interplay between individuality and
+                    emotion.<br>
+                    <br>
+                    I specialise in integrating complex concepts using interdisciplinary visual language.
+                </p>
+            </div>
+            <br>
+            WORK
+        </div>
+        <div class="wide-4 dropdown fill" id="personal">
+            <a href="./personal.html">PERSONAL PROJECTS</a>
+            <div class="dropdown-content">
+                <p>
+                    <a>2023</a><br>
+                    Spectral Archive<br>
+                    Invisible Feast<br>
+                </p>
+                <p>
+                    <a>2022</a><br>
+                    The Visitor<br>
+                    Gutter and Soul<br>
+                    Dialogue<br>
+                </p>
+                <p>
+                    <a>2021</a><br>
+                    Another Romance<br>
+                    Obloom<br>
+                </p>
+                <p>
+                    <a>2020</a><br>
+                    Utopia<br>
+                </p>
+            </div>
+            <br>
+            IN
+        </div>
+        <div class="wide-4 dropdown fill" id="commercial">
+            <a href="./commercial.html">COMMERCIAL PROJECTS</a>
+            <div class="dropdown-content">
+                <p>
+                    <a>NIKE</a><br>
+                    The Big Bang Network<br>
+                </p>
+                <p>
+                    <a>NEW BALANCE</a><br>
+                    Shanghai Content Factory<br>
+                </p>
+                <p>
+                    <a>BUDWEISWER</a><br>
+                    Annual Creative-X Awards Ceremony<br>
+                    Umet Gala<br>
+                </p>
+                <p>
+                    <a>NYU SHANGHAI</a><br>
+                    Opening Fall 2022<br>
+                    10th Anniversary Special Edition<br>
+                </p>
+                <p>
+                    <a>OMO</a><br>
+                    Floor Cleaning Formula<br>
+                </p>
+                <p>
+                    <a>PEET’S COFFEE</a><br>
+                    Pure Blend Packaging<br>
+                    Peet’s Coffee x ARC’TERYX Pop-up<br>
+                </p>
+            </div>
+            <br>
+            PROGRESS
+        </div>
+        <div class="slim-4 dropdown fill">
+            <a>CONTACT</a>
+            <div style="flex-grow:1;">
+                <p>
+                    oliviazuo0428@gmail.com<br>
+                    +44 07551561860
+                </p>
+            </div>
+        </div>
+    </div>
     <div class="highlight" style="align-self: flex-end; position: relative; bottom:0;">
         <a href="#offscreen">ARCHIVE ↓</a>
     </div>
@@ -55,51 +143,51 @@
                              path="/personal/2023/spectral-archive/day-3-1.jpg"
                              fix="width">
                         <img
-                             path="/personal/2023/spectral-archive/day-3-2.jpg"
-                             fix="width">
+                                path="/personal/2023/spectral-archive/day-3-2.jpg"
+                                fix="width">
                         <img
-                             path="/personal/2023/spectral-archive/day-3-3.jpg"
-                             fix="width">
+                                path="/personal/2023/spectral-archive/day-3-3.jpg"
+                                fix="width">
                         <img
-                             path="/personal/2023/spectral-archive/day-6-1.jpg"
-                             fix="width">
+                                path="/personal/2023/spectral-archive/day-6-1.jpg"
+                                fix="width">
                         <img
-                             path="/personal/2023/spectral-archive/day-6-2.jpg"
-                             fix="width">
+                                path="/personal/2023/spectral-archive/day-6-2.jpg"
+                                fix="width">
                         <img
-                             path="/personal/2023/spectral-archive/day-6-3.jpg"
-                             fix="width">
+                                path="/personal/2023/spectral-archive/day-6-3.jpg"
+                                fix="width">
                     </div>
                     <img
-                         path="/personal/2023/spectral-archive/archive.jpg"
-                         fix="width">
+                            path="/personal/2023/spectral-archive/archive.jpg"
+                            fix="width">
                     <figcaption>Spectral Archive</figcaption>
                 </figure>
                 <!-- Commercial: Nike Big Bang Network -->
                 <figure>
                     <img
-                         path="/commercial/nike/background-1.jpg"
-                         fix="width">
+                            path="/commercial/nike/background-1.jpg"
+                            fix="width">
                     <img
-                         path="/commercial/nike/background-2.jpg"
-                         fix="width">
+                            path="/commercial/nike/background-2.jpg"
+                            fix="width">
                     <img
-                         path="/commercial/nike/background-3.jpg"
-                         fix="width">
+                            path="/commercial/nike/background-3.jpg"
+                            fix="width">
                     <figcaption>Nike Big Bang Network</figcaption>
                 </figure>
                 <!-- Commercial: NYU Shanghai Opening Fall 2022 -->
                 <figure>
                     <img
-                         path="/commercial/nyu-shanghai/opening-fall-2022/cover.jpg"
-                         fix="width">
+                            path="/commercial/nyu-shanghai/opening-fall-2022/cover.jpg"
+                            fix="width">
                     <figcaption>NYU SH Opening Fall 2022</figcaption>
                 </figure>
                 <!-- Commercial: NYU SH 10th Anniversary -->
                 <figure>
                     <img
-                         path="/commercial/nyu-shanghai/10th-anniversary/cover.png"
-                         fix="width">
+                            path="/commercial/nyu-shanghai/10th-anniversary/cover.png"
+                            fix="width">
                     <figcaption>NYU SH 10th Anniversary</figcaption>
                 </figure>
             </div>
@@ -108,31 +196,31 @@
                 <!-- Personal: The Visitor -->
                 <figure>
                     <img
-                         path="/personal/2022/the-visitor/picture-booklet-1.jpg"
-                         fix="width">
+                            path="/personal/2022/the-visitor/picture-booklet-1.jpg"
+                            fix="width">
                     <div class="gallery" id="the-visitor">
                         <img style="display: block;"
                              path="/personal/2022/the-visitor/drawing-board-2-2.jpg"
                              fix="width">
                         <img
-                             path="/personal/2022/the-visitor/drawing-board-3.jpg"
-                             fix="width">
+                                path="/personal/2022/the-visitor/drawing-board-3.jpg"
+                                fix="width">
                         <img
-                             path="/personal/2022/the-visitor/drawing-board-4.jpg"
-                             fix="width">
+                                path="/personal/2022/the-visitor/drawing-board-4.jpg"
+                                fix="width">
                         <img
-                             path="/personal/2022/the-visitor/drawing-board-5.jpg"
-                             fix="width">
+                                path="/personal/2022/the-visitor/drawing-board-5.jpg"
+                                fix="width">
                         <img
-                             path="/personal/2022/the-visitor/drawing-board-6.jpg"
-                             fix="width">
+                                path="/personal/2022/the-visitor/drawing-board-6.jpg"
+                                fix="width">
                         <img
-                             path="/personal/2022/the-visitor/drawing-board-7.jpg"
-                             fix="width">
+                                path="/personal/2022/the-visitor/drawing-board-7.jpg"
+                                fix="width">
                     </div>
                     <img
-                         path="/personal/2022/the-visitor/picture-booklet-1.jpg"
-                         fix="width">
+                            path="/personal/2022/the-visitor/picture-booklet-1.jpg"
+                            fix="width">
                     <figcaption>The Visitor</figcaption>
                 </figure>
                 <!-- Personal: Utopia -->
@@ -142,18 +230,18 @@
                              path="/personal/2020/utopia/artboard-1-copy-1.jpg"
                              fix="width">
                         <img
-                             path="/personal/2020/utopia/artboard-1-copy-2.jpg"
-                             fix="width">
+                                path="/personal/2020/utopia/artboard-1-copy-2.jpg"
+                                fix="width">
                         <img
-                             path="/personal/2020/utopia/artboard-1-copy-3.jpg"
-                             fix="width">
+                                path="/personal/2020/utopia/artboard-1-copy-3.jpg"
+                                fix="width">
                         <img
-                             path="/personal/2020/utopia/artboard-1-copy-4.jpg"
-                             fix="width">
+                                path="/personal/2020/utopia/artboard-1-copy-4.jpg"
+                                fix="width">
                     </div>
                     <img
-                         path="/personal/2020/utopia/artboard-2.jpg"
-                         fix="width">
+                            path="/personal/2020/utopia/artboard-2.jpg"
+                            fix="width">
                     <figcaption>Utopia</figcaption>
                 </figure>
             </div>
@@ -162,25 +250,25 @@
                 <!-- Personal: Invisible Feast-->
                 <figure>
                     <img
-                         path="/personal/2023/invisible-feast/3-desert.png"
-                         fix="width">
+                            path="/personal/2023/invisible-feast/3-desert.png"
+                            fix="width">
                     <img
-                         path="/personal/2023/invisible-feast/collection-web.png"
-                         fix="width">
+                            path="/personal/2023/invisible-feast/collection-web.png"
+                            fix="width">
                     <figcaption>Invisible Feast</figcaption>
                 </figure>
                 <!-- Commercial: Peet's Coffee Pure Blend-->
                 <figure>
                     <img
-                         path="/commercial/peets-coffee/pure-blend/PET-packaging-picture.jpg"
-                         fix="width">
+                            path="/commercial/peets-coffee/pure-blend/PET-packaging-picture.jpg"
+                            fix="width">
                     <figcaption>Peet's Coffee Pure Blend</figcaption>
                 </figure>
                 <!-- Commercial: Peet's Coffee x ARC'TERYX-->
                 <figure>
                     <img
-                         path="/commercial/peets-coffee/peets-coffee-x-arcteryx/3-cans.jpg"
-                         fix="width">
+                            path="/commercial/peets-coffee/peets-coffee-x-arcteryx/3-cans.jpg"
+                            fix="width">
                     <figcaption>Peet's Coffee x ARC'TERYX</figcaption>
                 </figure>
                 <!-- Commercial: New Balance SCF -->
@@ -190,15 +278,15 @@
                              path="/commercial/new-balance/picture-shoe.jpg"
                              fix="width">
                         <img
-                             path="/commercial/new-balance/picture-stand-stickers.jpg"
-                             fix="width">
+                                path="/commercial/new-balance/picture-stand-stickers.jpg"
+                                fix="width">
                         <img
-                             path="/commercial/new-balance/picture-garnish-station.jpg"
-                             fix="width">
+                                path="/commercial/new-balance/picture-garnish-station.jpg"
+                                fix="width">
                     </div>
                     <img
-                         path="/commercial/new-balance/picture-shoot.jpg"
-                         fix="width">
+                            path="/commercial/new-balance/picture-shoot.jpg"
+                            fix="width">
                     <figcaption>New Balance SCF</figcaption>
                 </figure>
             </div>
@@ -207,27 +295,27 @@
                 <!-- Personal: Gutter and Soul -->
                 <figure>
                     <img
-                         path="/personal/2022/gutter-and-soul/phase-1-make-a-wish.jpg"
-                         fix="width">
+                            path="/personal/2022/gutter-and-soul/phase-1-make-a-wish.jpg"
+                            fix="width">
                     <img
-                         path="/personal/2022/gutter-and-soul/phase-2-cemeteryland.jpg"
-                         fix="width">
+                            path="/personal/2022/gutter-and-soul/phase-2-cemeteryland.jpg"
+                            fix="width">
                     <img
-                         path="/personal/2022/gutter-and-soul/phase-3-the-dive.jpg"
-                         fix="width">
+                            path="/personal/2022/gutter-and-soul/phase-3-the-dive.jpg"
+                            fix="width">
                     <img
-                         path="/personal/2022/gutter-and-soul/phase-4-wishful-thinking.jpg"
-                         fix="width">
+                            path="/personal/2022/gutter-and-soul/phase-4-wishful-thinking.jpg"
+                            fix="width">
                     <img
-                         path="/personal/2022/gutter-and-soul/phase-5-dream-comes-true.jpg"
-                         fix="width">
+                            path="/personal/2022/gutter-and-soul/phase-5-dream-comes-true.jpg"
+                            fix="width">
                     <figcaption>Gutter and Soul</figcaption>
                 </figure>
                 <!-- Commercial: OMO Floor Cleaner Machine Formula -->
                 <figure>
                     <img
-                         path="/commercial/omo/packaging-white-bg.jpg"
-                         fix="width">
+                            path="/commercial/omo/packaging-white-bg.jpg"
+                            fix="width">
                     <figcaption>OMO Floor Cleaner Machine Formula</figcaption>
                 </figure>
             </div>
@@ -240,12 +328,12 @@
                              path="/personal/2023/spectral-archive/day-3-1.jpg"
                              fix="width">
                         <img
-                             path="/personal/2023/spectral-archive/day-3-2.jpg"
-                             fix="width">
+                                path="/personal/2023/spectral-archive/day-3-2.jpg"
+                                fix="width">
                     </div>
                     <img
-                         path="/personal/2023/spectral-archive/archive.jpg"
-                         fix="width">
+                            path="/personal/2023/spectral-archive/archive.jpg"
+                            fix="width">
                     <figcaption>Dialogue</figcaption>
                 </figure>
                 <!-- Personal: Obloom -->
@@ -255,24 +343,24 @@
                              path="/personal/2021/obloom/interface-1.jpg"
                              fix="width">
                         <img
-                             path="/personal/2021/obloom/interface-2.jpg"
-                             fix="width">
+                                path="/personal/2021/obloom/interface-2.jpg"
+                                fix="width">
                         <img
-                             path="/personal/2021/obloom/interface-3.jpg"
-                             fix="width">
+                                path="/personal/2021/obloom/interface-3.jpg"
+                                fix="width">
                         <img
-                             path="/personal/2021/obloom/interface-4.jpg"
-                             fix="width">
+                                path="/personal/2021/obloom/interface-4.jpg"
+                                fix="width">
                     </div>
                     <img
-                         path="/personal/2021/obloom/compact-disc.jpg"
-                         fix="width">
+                            path="/personal/2021/obloom/compact-disc.jpg"
+                            fix="width">
                     <img
-                         path="/personal/2021/obloom/floppy-disc.jpg"
-                         fix="width">
+                            path="/personal/2021/obloom/floppy-disc.jpg"
+                            fix="width">
                     <img
-                         path="/personal/2021/obloom/cassette-tape.jpg"
-                         fix="width">
+                            path="/personal/2021/obloom/cassette-tape.jpg"
+                            fix="width">
                     <figcaption>Obloom</figcaption>
                 </figure>
                 <!-- Commercial: Budweiser Annual Creative-X Awards Ceremony -->
@@ -282,33 +370,33 @@
                              path="/commercial/budweiser/annual-creative-x-awards/1-creative-brand-strategy.jpg"
                              fix="width">
                         <img
-                             path="/commercial/budweiser/annual-creative-x-awards/1-scale-and-adapt.jpg"
-                             fix="width">
+                                path="/commercial/budweiser/annual-creative-x-awards/1-scale-and-adapt.jpg"
+                                fix="width">
                         <img
-                             path="/commercial/budweiser/annual-creative-x-awards/2-creative-execution.jpg"
-                             fix="width">
+                                path="/commercial/budweiser/annual-creative-x-awards/2-creative-execution.jpg"
+                                fix="width">
                         <img
-                             path="/commercial/budweiser/annual-creative-x-awards/2-entertainment.jpg"
-                             fix="width">
+                                path="/commercial/budweiser/annual-creative-x-awards/2-entertainment.jpg"
+                                fix="width">
                         <img
-                             path="/commercial/budweiser/annual-creative-x-awards/3-better-world.jpg"
-                             fix="width">
+                                path="/commercial/budweiser/annual-creative-x-awards/3-better-world.jpg"
+                                fix="width">
                         <img
-                             path="/commercial/budweiser/annual-creative-x-awards/3-smart-drinking.jpg"
-                             fix="width">
+                                path="/commercial/budweiser/annual-creative-x-awards/3-smart-drinking.jpg"
+                                fix="width">
                         <img
-                             path="/commercial/budweiser/annual-creative-x-awards/4-creative-partner.jpg"
-                             fix="width">
+                                path="/commercial/budweiser/annual-creative-x-awards/4-creative-partner.jpg"
+                                fix="width">
                         <img
-                             path="/commercial/budweiser/annual-creative-x-awards/4-draftline-of-the-year.jpg"
-                             fix="width">
+                                path="/commercial/budweiser/annual-creative-x-awards/4-draftline-of-the-year.jpg"
+                                fix="width">
                         <img
-                             path="/commercial/budweiser/annual-creative-x-awards/4-grand-prix.jpg"
-                             fix="width">
+                                path="/commercial/budweiser/annual-creative-x-awards/4-grand-prix.jpg"
+                                fix="width">
                     </div>
                     <img
-                         path="/commercial/budweiser/annual-creative-x-awards/picture.jpg"
-                         fix="width">
+                            path="/commercial/budweiser/annual-creative-x-awards/picture.jpg"
+                            fix="width">
                     <figcaption>Budweiser Annual Creative-X Awards Ceremony</figcaption>
                 </figure>
             </div>
@@ -319,30 +407,51 @@
                 <!-- Commercial: Budweiser Unmet Gala -->
                 <figure>
                     <img
-                         path="/commercial/budweiser/unmet-gala/invitation.jpg"
-                         fix="width">
+                            path="/commercial/budweiser/unmet-gala/invitation.jpg"
+                            fix="width">
                     <figcaption>Budweiser Unmet Gala</figcaption>
                 </figure>
                 <!-- Commercial: Budweiser Zoom Background -->
                 <figure>
                     <img
-                         path="/commercial/budweiser/unmet-gala/zoom-bg-kitchen.png"
-                         fix="width">
+                            path="/commercial/budweiser/unmet-gala/zoom-bg-kitchen.png"
+                            fix="width">
                     <img
-                         path="/commercial/budweiser/unmet-gala/zoom-bg-bedroom.png"
-                         fix="width">
+                            path="/commercial/budweiser/unmet-gala/zoom-bg-bedroom.png"
+                            fix="width">
                     <img
-                         path="/commercial/budweiser/unmet-gala/zoom-bg-living-room.png"
-                         fix="width">
+                            path="/commercial/budweiser/unmet-gala/zoom-bg-living-room.png"
+                            fix="width">
                     <img
-                         path="/commercial/budweiser/unmet-gala/zoom-bg-balcony.png"
-                         fix="width">
+                            path="/commercial/budweiser/unmet-gala/zoom-bg-balcony.png"
+                            fix="width">
                     <figcaption>Budweiser Zoom Background</figcaption>
                 </figure>
             </div>
         </div>
     </div>
 </div>
-<div hx-trigger="load" hx-get="/footer.html" hx-swap="outerHTML"></div>
+<div id="footer">
+    <div class="column-container">
+        <hr>
+        <div id="rail" class="pure-g">
+            <div class="normal-1-6">
+
+            </div>
+            <div class="normal-1-6">
+                <a href="mailto:oliviazuo0428@gmail.com">EMAIL</a>
+            </div>
+            <div class="normal-1-6">
+                <a href="https://www.instagram.com/l1v.isliving/">INSTAGRAM</a>
+            </div>
+            <div class="normal-1-6">
+                <a href="https://vimeo.com/user146109949">VIMEO</a>
+            </div>
+            <div id="trademark" class="normal-2-6">
+                © OLIVIA ZUO, 2024
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>

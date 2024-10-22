@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <title>OLIVIA ZUO - COMMERCIAL</title>
-    <link rel="icon" type="image/x-icon" href="https://storage.googleapis.com/oliviazuo-portfolio/elements/element-blue.png">
+    <link rel="icon" type="image/x-icon"
+          href="https://storage.googleapis.com/oliviazuo-portfolio/elements/element-blue.png">
     <link rel="stylesheet" href="./resources/styles/base-min.css">
     <link rel="stylesheet" href="./resources/styles/page/commercial.css">
     <link rel="stylesheet" href="./resources/styles/grids-min.css">
@@ -10,14 +11,15 @@
 
     <script src="./resources/js/image.js" type="module"></script>
 
-    <!-- HTMX -->
-    <script src="https://unpkg.com/htmx.org@2.0.0" integrity="sha384-wS5l5IKJBvK6sPTKa2WZ1js3d947pvWXbPJ1OmWfEuxLgeHcEbjUUA5i9V5ZkpCw" crossorigin="anonymous"></script>
-
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-MV5EDGJ2R9"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', 'G-MV5EDGJ2R9');
@@ -25,7 +27,100 @@
 </head>
 <body>
 <div id="screen">
-    <div hx-trigger="load" hx-get="/header.html" hx-swap="outerHTML"></div>
+    <div class="pure-g header">
+        <div class="wide-4 dropdown fill" id="index">
+            <a class="title" href="./">OLIVIA ZUO</a>
+            <br>
+            <div class="dropdown-content">
+                <p>
+                    Graphic Designer, Researcher<br>
+                    Based in London
+                </p>
+                <p>
+                    BA Advertising, BNU<br>
+                    MA Graphic Media Design, UAL
+                </p>
+                <p>
+                    My current research focus lies in media memory and the interplay between individuality and
+                    emotion.<br>
+                    <br>
+                    I specialise in integrating complex concepts using interdisciplinary visual language.
+                </p>
+            </div>
+            <br>
+            WORK
+        </div>
+        <div class="wide-4 dropdown fill" id="personal">
+            <a href="./personal.html">PERSONAL PROJECTS</a>
+            <div class="dropdown-content">
+                <p>
+                    <a>2023</a><br>
+                    Spectral Archive<br>
+                    Invisible Feast<br>
+                </p>
+                <p>
+                    <a>2022</a><br>
+                    The Visitor<br>
+                    Gutter and Soul<br>
+                    Dialogue<br>
+                </p>
+                <p>
+                    <a>2021</a><br>
+                    Another Romance<br>
+                    Obloom<br>
+                </p>
+                <p>
+                    <a>2020</a><br>
+                    Utopia<br>
+                </p>
+            </div>
+            <br>
+            IN
+        </div>
+        <div class="wide-4 dropdown fill" id="commercial">
+            <a href="./commercial.html">COMMERCIAL PROJECTS</a>
+            <div class="dropdown-content">
+                <p>
+                    <a>NIKE</a><br>
+                    The Big Bang Network<br>
+                </p>
+                <p>
+                    <a>NEW BALANCE</a><br>
+                    Shanghai Content Factory<br>
+                </p>
+                <p>
+                    <a>BUDWEISWER</a><br>
+                    Annual Creative-X Awards Ceremony<br>
+                    Umet Gala<br>
+                </p>
+                <p>
+                    <a>NYU SHANGHAI</a><br>
+                    Opening Fall 2022<br>
+                    10th Anniversary Special Edition<br>
+                </p>
+                <p>
+                    <a>OMO</a><br>
+                    Floor Cleaning Formula<br>
+                </p>
+                <p>
+                    <a>PEET’S COFFEE</a><br>
+                    Pure Blend Packaging<br>
+                    Peet’s Coffee x ARC’TERYX Pop-up<br>
+                </p>
+            </div>
+            <br>
+            PROGRESS
+        </div>
+        <div class="slim-4 dropdown fill">
+            <a>CONTACT</a>
+            <div style="flex-grow:1;">
+                <p>
+                    oliviazuo0428@gmail.com<br>
+                    +44 07551561860
+                </p>
+            </div>
+        </div>
+    </div>
 </div>
 <div id="offscreen">
     <div class="pure-g" id="gallery">
@@ -49,6 +144,27 @@
         </div>
     </div>
 </div>
-<div hx-trigger="load" hx-get="/footer.html" hx-swap="outerHTML"></div>
+<div id="footer">
+    <div class="column-container">
+        <hr>
+        <div id="rail" class="pure-g">
+            <div class="normal-1-6">
+
+            </div>
+            <div class="normal-1-6">
+                <a href="mailto:oliviazuo0428@gmail.com">EMAIL</a>
+            </div>
+            <div class="normal-1-6">
+                <a href="https://www.instagram.com/l1v.isliving/">INSTAGRAM</a>
+            </div>
+            <div class="normal-1-6">
+                <a href="https://vimeo.com/user146109949">VIMEO</a>
+            </div>
+            <div id="trademark" class="normal-2-6">
+                © OLIVIA ZUO, 2024
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
