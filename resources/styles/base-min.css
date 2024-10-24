@@ -30,6 +30,7 @@ html {
     font-family: "Font", sans-serif;
     font-variation-settings: 'slnt' 0, 'MONO' 0.25;
     scroll-behavior: smooth;
+    text-wrap: balance;
 }
 
 body {
@@ -92,7 +93,8 @@ a:hover {
 #screen {
     box-sizing: border-box;
     padding: 1.5rem;
-    height: 100vh;
+    height: 100svh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
 }
@@ -293,8 +295,14 @@ template {
     .dropdown:hover .dropdown-content {
         visibility: visible;
     }
+
+    figcaption {
+        overflow-wrap: break-word;
+    }
 }
 
 @media screen and (max-width: 700px) {
-
+    figcaption {
+        overflow-wrap: break-word;
+    }
 }
