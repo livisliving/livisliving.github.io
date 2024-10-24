@@ -92,9 +92,8 @@ a:hover {
 
 #screen {
     box-sizing: border-box;
-    padding: 1.5rem;
-    height: 100svh;
-    width: 100vw;
+    padding: 1.5rem 1.5rem 0;
+    height: 100lvh;
     display: flex;
     flex-direction: column;
 }
@@ -283,7 +282,8 @@ template {
 .header {
     flex-grow: 1;
     padding: 0;
-    height: 100%;
+    margin: 0 0 1.5rem;
+    height: 100svh;
 }
 
 @media screen and (min-width: 700px) {
