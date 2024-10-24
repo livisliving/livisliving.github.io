@@ -49,7 +49,7 @@
     .header {
         display: flex;
         flex-flow: column;
-        align-content: flex-end;
+        align-content: flex-start;
         width: 100%;
     }
 
